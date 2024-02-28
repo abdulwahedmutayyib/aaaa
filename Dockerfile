@@ -12,7 +12,7 @@ WORKDIR /app
 
 # Copy the application files into the container
 COPY requirements.txt .
-COPY video_player.py .
+COPY vide.py .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
@@ -21,5 +21,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # EXPOSE 8080
 
 # Run the video player application
-CMD ["python", "video_player.py"]
+CMD ["python", "video.py"]
 
